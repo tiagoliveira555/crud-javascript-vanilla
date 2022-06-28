@@ -60,7 +60,9 @@ const atualizarTabela = () => {
   });
 };
 
-const handleSubmit = () => {
+const handleSubmit = (e) => {
+  e.preventDefault();
+
   const cliente = {
     nome: nomeForm.value,
     email: emailForm.value,
@@ -77,7 +79,7 @@ const handleSubmit = () => {
 
 const modalEditar = (index) => {
   openModal();
-  
+
   const cliente = getBanco()[index];
   preencherCampos(cliente);
 
