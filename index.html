@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>CRUD</h1>
+    </header>
+    <section>
+      <div class="table">
+        <button class="botoes blue" id="btn-adicionar">Adicionar</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>E-mail</th>
+              <th>Endereço</th>
+              <th>CPF</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="preencherTable"></tbody>
+        </table>
+      </div>
+      <div class="modal">
+        <div class="formulario">
+          <div class="inputs">
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Digite seu nome..."
+              data_js="new"
+            />
+          </div>
+          <div class="inputs">
+            <label for="email">E-mail</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Digite seu email..."
+            />
+          </div>
+          <div class="inputs">
+            <label for="endereco">Endereço</label>
+            <input
+              type="text"
+              name="endereco"
+              id="endereco"
+              placeholder="Digite seu endereco..."
+            />
+          </div>
+          <div class="inputs">
+            <label for="cpf">CPF</label>
+            <input
+              type="text"
+              name="cpf"
+              id="cpf"
+              placeholder="Digite seu cpf..."
+            />
+          </div>
+          <div class="botoes-container">
+            <button class="botoes blue" id="btn-salvar">Salvar</button>
+            <button class="botoes gray" id="btn-cancelar">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; Tiago Oliveira</p>
+    </footer>
+  </body>
+</html>

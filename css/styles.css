@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #179fb8;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    letter-spacing: 10px;
+}
+
+.table {
+    min-height: 80vh;
+    padding: 40px 80px;
+}
+
+.table table {
+    padding: 8px;
+    min-width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 0 10px #0000005e;
+    border-radius: 5px;
+}
+
+.table table thead tr th {
+    text-align: start;
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+}
+
+.table table thead tr th:last-child,
+.table table tbody tr td:last-child {
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.table table tbody tr td {
+    padding: 10px 0;
+}
+
+.botoes {
+    border: none;
+    padding: 10px 15px;
+    font-size: .9em;
+    transform: .4s;
+    cursor: pointer;
+    color: #fff;
+}
+
+.botoes:hover {
+    opacity: .8;
+}
+
+.botoes.blue {
+    margin-left: 5px;
+    background-color: #1c73ad;
+}
+
+.botoes.green {
+    background-color: #2da852;
+}
+
+.botoes.red {
+    background-color: #ca3319;
+}
+
+.botoes.gray {
+    background-color: #6b6665;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000007a;
+}
+
+.modal_open {
+    display: flex;
+}
+
+.formulario {
+    background-color: #fff;
+    width: 50%;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+.inputs label {
+    margin-bottom: 5px;
+}
+
+.inputs input {
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #eee;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.botoes-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+footer {
+    background-color: #ddd;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
